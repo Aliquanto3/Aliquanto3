@@ -1,6 +1,8 @@
 import io
+import json
 import sys
 import unittest
+from unittest import mock
 from contextlib import redirect_stderr
 from pathlib import Path
 
@@ -126,6 +128,33 @@ class T(unittest.TestCase):
     def test_missing_marker(self):
         with self.assertRaises(ValueError):
             bp.build("rien", [repo("a")], CFG)
+
+
+def api_node(name, latest, releases):
+    return {"name": name, "url": "u", "isPrivate": False, "description": None,
+            "repositoryTopics": {"nodes": []},
+            "latestRelease": {"tagName": latest} if latest else None,
+            "releases": {"nodes": [{"tagName": t, "isPrerelease": p, "isDraft": d}
+                                   for t, p, d in releases]}}
+
+
+class FetchRepos(unittest.TestCase):
+    def test_prerelease_selection(self):
+        nodes = [
+            api_node("rc_after", "v1", [("v2-rc", True, False), ("v1", False, False)]),
+            api_node("stable_after", "v2", [("v2", False, False), ("v2-rc", True, False)]),
+            api_node("draft_first", "v1", [("v3", False, True), ("v2-rc", True, False)]),
+            api_node("pre_only", None, [("v0.1", True, False)]),
+            api_node("none", None, []),
+        ]
+        page = {"data": {"viewer": {"repositories": {
+            "pageInfo": {"hasNextPage": False, "endCursor": None}, "nodes": nodes}}}}
+        resp = io.BytesIO(json.dumps(page).encode())
+        with mock.patch.object(bp.urllib.request, "urlopen", return_value=resp):
+            got = {r["name"]: (r["release"], r["prerelease"]) for r in bp.fetch_repos("t")}
+        self.assertEqual(got, {"rc_after": ("v1", "v2-rc"), "stable_after": ("v2", None),
+                               "draft_first": ("v1", "v2-rc"), "pre_only": (None, "v0.1"),
+                               "none": (None, None)})
 
 
 if __name__ == "__main__":
