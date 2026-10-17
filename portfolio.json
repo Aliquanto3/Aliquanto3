@@ -20,6 +20,7 @@
     "agent-cost-kit",
     "slm-quality-bench",
     "service-public-slm-fine-tuning",
+    "waveaudit",
     "usine-migration-jira-demo",
     "wavelibrarian"
   ],
@@ -48,6 +49,10 @@
       "name": "Copilote Jira",
       "name_en": "Jira Copilot",
       "en": "Automated reporting and AI copilot for an IT migration factory driven by Jira (fictitious data)."
+    },
+    "waveaudit": {
+      "name": "WaveAudit",
+      "en": "Offline AI assistant for cybersecurity audit consultants on a 16 GB CPU-only laptop: a local small language model drafts vulnerability findings from raw pentest notes, with no data leaving the machine."
     },
     "wavelibrarian": {
       "name": "WaveLibrarian",
