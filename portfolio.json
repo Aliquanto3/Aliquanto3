@@ -7,7 +7,7 @@
   "statuses": {
     "status-deployed": { "fr": "🟢 Déployé", "en": "🟢 Deployed", "with_version": true, "rank": 1 },
     "status-test": { "fr": "🔵 Développé, en test", "en": "🔵 Built, in testing", "rank": 3 },
-    "status-bench": { "fr": "🔵 Développé, évaluation en cours", "en": "🔵 Built, benchmarking in progress", "rank": 3 },
+    "status-bench": { "fr": "🟣 Développé, calculs de plusieurs jours en cours", "en": "🟣 Built, multi-day runs in progress", "rank": 3 },
     "status-dev": { "fr": "🟡 En développement", "en": "🟡 In development", "rank": 4 },
     "status-refonte": { "fr": "🟠 En refonte majeure", "en": "🟠 Major rework", "with_version": true, "rank": 2 },
     "status-spec": { "fr": "⚪ En spécification", "en": "⚪ Specification", "rank": 5 }
