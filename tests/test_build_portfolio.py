@@ -15,6 +15,7 @@ CFG = {
         "status-dev": {"fr": "En dev", "en": "In dev", "rank": 2},
     },
     "release_default": "status-deployed",
+    "pending": {"fr": "{tag} à tester", "en": "{tag} pending"},
     "unknown": {"fr": "Inconnu", "en": "Unknown"},
     "repos": {
         "zeta": {"name": "Zeta", "en": "Zeta en"},
@@ -50,6 +51,25 @@ class T(unittest.TestCase):
         out, _ = self.table([repo("a", ["status-dev"], "v1")])
         self.assertIn("En dev |", out)
         self.assertNotIn("v1", out)
+
+    def test_prerelease_display(self):
+        pre = {**repo("a", ["status-deployed"], "v1"), "prerelease": "v2"}
+        only = {**repo("b", ["status-deployed"]), "prerelease": "v3"}
+        for lang, txt in (("fr", "à tester"), ("en", "pending")):
+            out, _ = self.table([pre, only], lang)
+            self.assertIn(f"v1 · v2 {txt}", out)
+            self.assertIn(f"· v3 {txt}", out)
+            self.assertNotIn(f"v1 · v3", out)
+
+    def test_prerelease_ignored_without_version_and_default(self):
+        out, _ = self.table([{**repo("a", ["status-dev"]), "prerelease": "v2"}])
+        self.assertNotIn("v2", out)
+        out, _ = self.table([{**repo("b"), "prerelease": "v2"}])
+        self.assertIn("Déployé · v2 à tester", out)
+
+    def test_missing_prerelease_key(self):
+        out, _ = self.table([repo("a", ["status-deployed"], "v1")])
+        self.assertIn("Déployé · v1 |", out)
 
     def test_unknown_status_warns(self):
         out, err = self.table([repo("a")])

@@ -25,7 +25,7 @@ Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure
 
 <!-- portfolio:fr:end -->
 
-<sub>Tableau régénéré chaque semaine à partir des dépôts eux-mêmes.</sub>
+<sub>Tableau régénéré chaque semaine à partir des dépôts eux-mêmes. « À tester » désigne une version publiée mais pas encore recettée manuellement.</sub>
 
 <details>
 <summary>🇬🇧 English version</summary>
@@ -55,6 +55,6 @@ I build AI tools that run on ordinary machines, measure what they are really wor
 
 <!-- portfolio:en:end -->
 
-<sub>Table regenerated weekly from the repositories themselves. Projects are documented in French.</sub>
+<sub>Table regenerated weekly from the repositories themselves. Projects are documented in French. "Pending manual testing" marks a version that is published but not yet manually tested.</sub>
 
 </details>

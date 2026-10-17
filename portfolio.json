@@ -13,6 +13,7 @@
     "status-spec": { "fr": "⚪ En spécification", "en": "⚪ Specification", "rank": 5 }
   },
   "release_default": "status-deployed",
+  "pending": { "fr": "{tag} à tester", "en": "{tag} pending manual testing" },
   "unknown": { "fr": "État non renseigné", "en": "Status not set" },
   "repos": {
     "agentic-harness-training-demo": {

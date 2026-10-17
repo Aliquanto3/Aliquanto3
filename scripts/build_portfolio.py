@@ -14,7 +14,9 @@ API = "https://api.github.com/graphql"
 QUERY = """query($cursor: String) { viewer { repositories(first: 100, after: $cursor,
 ownerAffiliations: OWNER) { pageInfo { hasNextPage endCursor } nodes { name url isPrivate
 description repositoryTopics(first: 30) { nodes { topic { name } } }
-latestRelease { tagName } } } } }"""
+latestRelease { tagName }
+releases(first: 5, orderBy: {field: CREATED_AT, direction: DESC}) {
+nodes { tagName isPrerelease isDraft } } } } } }"""
 
 
 def warn(msg):
@@ -34,11 +36,14 @@ def fetch_repos(token):
             raise RuntimeError(f"erreur API GitHub : {data['errors']}")
         page = data["data"]["viewer"]["repositories"]
         for n in page["nodes"]:
+            release = (n["latestRelease"] or {}).get("tagName")
+            last = next((r for r in n["releases"]["nodes"] if not r["isDraft"]), None)
+            pre = last["tagName"] if last and last["isPrerelease"] and last["tagName"] != release else None
             repos.append({
                 "name": n["name"], "url": n["url"], "private": n["isPrivate"],
                 "description": n["description"] or "",
                 "topics": [t["topic"]["name"] for t in n["repositoryTopics"]["nodes"]],
-                "release": (n["latestRelease"] or {}).get("tagName")})
+                "release": release, "prerelease": pre})
         if not page["pageInfo"]["hasNextPage"]:
             return repos
         cursor = page["pageInfo"]["endCursor"]
@@ -55,7 +60,7 @@ def display_name(repo, meta, lang):
 
 def status_key(repo, cfg):
     key = next((k for k in cfg["statuses"] if k in repo["topics"]), None)
-    if key is None and repo["release"]:
+    if key is None and (repo["release"] or repo.get("prerelease")):
         key = cfg["release_default"]
     return key
 
@@ -70,6 +75,8 @@ def status_label(repo, cfg, lang):
     label = st[lang]
     if st.get("with_version") and repo["release"]:
         label += f" · {repo['release']}"
+    if st.get("with_version") and repo.get("prerelease"):
+        label += " · " + cfg["pending"][lang].format(tag=repo["prerelease"])
     return label
 
 
