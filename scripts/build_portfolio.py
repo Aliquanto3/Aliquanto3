@@ -27,7 +27,7 @@ def fetch_repos(token):
         req = urllib.request.Request(API, body, {
             "Authorization": f"bearer {token}", "Content-Type": "application/json",
             "User-Agent": "build-portfolio"})
-        with urllib.request.urlopen(req) as resp:
+        with urllib.request.urlopen(req, timeout=30) as resp:
             data = json.load(resp)
         if data.get("errors"):
             raise RuntimeError(f"erreur API GitHub : {data['errors']}")
@@ -112,6 +112,8 @@ def replace_block(readme, lang, table):
 
 def build(readme, repos, cfg):
     selected = select_repos(repos, cfg)
+    if not selected:
+        raise RuntimeError(f"aucun dépôt avec le topic {cfg['topic']} : jeton sans accès ? README inchangé")
     for lang in ("fr", "en"):
         readme = replace_block(readme, lang, render_table(selected, cfg, lang))
     return readme
@@ -140,7 +142,8 @@ def main(argv=None):
         print(f"erreur : {e}", file=sys.stderr)
         return 1
     if args.dry_run:
-        sys.stdout.reconfigure(encoding="utf-8", newline="\n")
+        sys.stdout.reconfigure(  # type: ignore[attr-defined]
+            encoding="utf-8", newline="\n")
         sys.stdout.write(new)
     elif new != old:
         path.write_bytes(new.encode("utf-8"))

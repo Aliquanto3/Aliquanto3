@@ -39,5 +39,6 @@ jobs:
             git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
             git add README.md
             git commit -m "chore: mise à jour de l'index des projets"
+            git pull --rebase
             git push
           fi

@@ -55,7 +55,16 @@ class T(unittest.TestCase):
     def test_unknown_status_warns(self):
         out, err = self.table([repo("a")])
         self.assertIn("Inconnu", out)
-        self.assertIn("a", err)
+        self.assertIn("avertissement", err)
+        self.assertIn("a", err.split("avertissement", 1)[1])
+
+    def test_status_priority_follows_config_order(self):
+        out, _ = self.table([repo("a", ["status-dev", "status-deployed"], "v2")])
+        self.assertIn("Déployé · v2", out)
+
+    def test_no_selected_repo_is_an_error(self):
+        with self.assertRaises(RuntimeError):
+            bp.build("rien", [{**repo("x"), "topics": []}], CFG)
 
     def test_filter_and_order(self):
         repos = [repo("zeta", ["status-dev"]), repo("beta", ["status-dev"]),
@@ -84,7 +93,7 @@ class T(unittest.TestCase):
 
     def test_missing_marker(self):
         with self.assertRaises(ValueError):
-            bp.build("rien", [], CFG)
+            bp.build("rien", [repo("a")], CFG)
 
 
 if __name__ == "__main__":
