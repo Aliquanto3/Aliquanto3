@@ -1,0 +1,57 @@
+{
+  "topic": "ai-portfolio",
+  "headers": {
+    "fr": ["Projet", "État", "Description"],
+    "en": ["Project", "Status", "Description"]
+  },
+  "statuses": {
+    "status-deployed": { "fr": "🟢 Déployé", "en": "🟢 Deployed", "with_version": true },
+    "status-test": { "fr": "🔵 Développé, en test", "en": "🔵 Built, in testing" },
+    "status-bench": { "fr": "🔵 Développé, évaluation en cours", "en": "🔵 Built, benchmarking in progress" },
+    "status-dev": { "fr": "🟡 En développement", "en": "🟡 In development" },
+    "status-refonte": { "fr": "🟠 En refonte majeure", "en": "🟠 Major rework", "with_version": true },
+    "status-spec": { "fr": "⚪ En spécification", "en": "⚪ Specification" }
+  },
+  "release_default": "status-deployed",
+  "unknown": { "fr": "État non renseigné", "en": "Status not set" },
+  "order": [
+    "agentic-harness-training-demo",
+    "wavelocalai",
+    "agent-cost-kit",
+    "slm-quality-bench",
+    "service-public-slm-fine-tuning",
+    "usine-migration-jira-demo",
+    "wavelibrarian"
+  ],
+  "repos": {
+    "agentic-harness-training-demo": {
+      "name": "WaveStack",
+      "en": "Teaching demonstrator that shows, building block by building block, what an agentic harness adds to a bare LLM (reasoning, memory, tools, RAG, MCP, skills, hooks, sub-agents). Runs locally on CPU; French, English and German interface."
+    },
+    "wavelocalai": {
+      "name": "WaveLocalAI",
+      "en": "Local and responsible AI workbench: small language model (SLM) demo, advanced RAG and autonomous agents, with Green IT impact measurement (CodeCarbon)."
+    },
+    "agent-cost-kit": {
+      "name": "Agent Cost Kit",
+      "en": "Claude Code plugin for developing with agents without blowing up the bill: role-routed agents, quick end-of-story check, real cost measurement from local transcripts."
+    },
+    "slm-quality-bench": {
+      "name": "SLM Quality Bench",
+      "en": "Hard quality benchmark for small local language models (Ollama), in French: two reasoning tracks, anti-contamination, calibrated judge, paired statistics."
+    },
+    "service-public-slm-fine-tuning": {
+      "name": "SLM Service Public",
+      "en": "Offline AI assistant for French public sector staff on a 16 GB office PC: fine-tuned small model, local RAG and the official data.gouv MCP server."
+    },
+    "usine-migration-jira-demo": {
+      "name": "Copilote Jira",
+      "name_en": "Jira Copilot",
+      "en": "Automated reporting and AI copilot for an IT migration factory driven by Jira (fictitious data)."
+    },
+    "wavelibrarian": {
+      "name": "WaveLibrarian",
+      "en": "Benchmark of AI document retrieval architectures (naive and hybrid RAG, GraphRAG, LLM wiki, agentic search) on quality, cost, latency, energy and compliance."
+    }
+  }
+}
