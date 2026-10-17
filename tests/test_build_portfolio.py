@@ -11,12 +11,11 @@ CFG = {
     "topic": "ai-portfolio",
     "headers": {"fr": ["Projet", "État", "Description"], "en": ["Project", "Status", "Description"]},
     "statuses": {
-        "status-deployed": {"fr": "Déployé", "en": "Deployed", "with_version": True},
-        "status-dev": {"fr": "En dev", "en": "In dev"},
+        "status-deployed": {"fr": "Déployé", "en": "Deployed", "with_version": True, "rank": 1},
+        "status-dev": {"fr": "En dev", "en": "In dev", "rank": 2},
     },
     "release_default": "status-deployed",
     "unknown": {"fr": "Inconnu", "en": "Unknown"},
-    "order": ["zeta"],
     "repos": {
         "zeta": {"name": "Zeta", "en": "Zeta en"},
         "beta": {"name": "Beta", "name_en": "Beta EN", "en": "a|b\nc"},
@@ -68,9 +67,22 @@ class T(unittest.TestCase):
 
     def test_filter_and_order(self):
         repos = [repo("zeta", ["status-dev"]), repo("beta", ["status-dev"]),
-                 repo("alpha", ["status-dev"]), {**repo("x"), "topics": ["other"]}]
+                 repo("alpha", ["status-dev"]), repo("omega", ["status-deployed"]),
+                 repo("nul"), {**repo("x"), "topics": ["other"]}]
         names = [r["name"] for r in bp.select_repos(repos, CFG)]
-        self.assertEqual(names, ["zeta", "alpha", "beta"])
+        self.assertEqual(names, ["omega", "alpha", "beta", "zeta", "nul"])
+
+    def test_alphabetical_ignores_case_and_accents(self):
+        cfg = {**CFG, "repos": {"e": {"name": "Écho"}, "d": {"name": "delta"}, "f": {"name": "Foxtrot"}}}
+        repos = [repo(n, ["status-dev"]) for n in ("f", "e", "d")]
+        self.assertEqual([r["name"] for r in bp.select_repos(repos, cfg)], ["d", "e", "f"])
+
+    def test_order_uses_display_name_of_language(self):
+        cfg = {**CFG, "repos": {"j": {"name": "Copilote Jira", "name_en": "Jira Copilot"},
+                                "h": {"name": "Harnais", "name_en": "Harness"}}}
+        repos = [repo("j", ["status-dev"]), repo("h", ["status-dev"])]
+        self.assertEqual([r["name"] for r in bp.select_repos(repos, cfg, "fr")], ["j", "h"])
+        self.assertEqual([r["name"] for r in bp.select_repos(repos, cfg, "en")], ["h", "j"])
 
     def test_name_en_and_escape(self):
         out, _ = self.table([repo("beta", ["status-dev"])], "en")

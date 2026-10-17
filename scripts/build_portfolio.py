@@ -5,6 +5,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import urllib.request
 from pathlib import Path
 
@@ -52,11 +53,16 @@ def display_name(repo, meta, lang):
     return (m.get("name_en") if lang == "en" else None) or m.get("name") or repo["name"]
 
 
-def status_label(repo, cfg, lang):
-    statuses = cfg["statuses"]
-    key = next((k for k in statuses if k in repo["topics"]), None)
+def status_key(repo, cfg):
+    key = next((k for k in cfg["statuses"] if k in repo["topics"]), None)
     if key is None and repo["release"]:
         key = cfg["release_default"]
+    return key
+
+
+def status_label(repo, cfg, lang):
+    statuses = cfg["statuses"]
+    key = status_key(repo, cfg)
     if key is None:
         warn(f"état inconnu pour {repo['name']}")
         return cfg["unknown"][lang]
@@ -81,13 +87,23 @@ def description(repo, meta, lang):
     return text
 
 
-def select_repos(repos, cfg):
+def sort_text(text):
+    """Clé alphabétique insensible à la casse et aux accents."""
+    return "".join(c for c in unicodedata.normalize("NFD", text.casefold())
+                   if not unicodedata.combining(c))
+
+
+def select_repos(repos, cfg, lang="fr"):
+    """Dépôts du topic, triés par rang d'état puis par nom affiché dans la langue."""
     meta = cfg.get("repos", {})
-    rank = {n: i for i, n in enumerate(cfg["order"])}
+    last = max((s["rank"] for s in cfg["statuses"].values()), default=0) + 1
+
+    def rank(r):
+        key = status_key(r, cfg)
+        return cfg["statuses"][key]["rank"] if key else last
+
     kept = [r for r in repos if cfg["topic"] in r["topics"]]
-    return sorted(kept, key=lambda r: (rank.get(r["name"], len(rank)),
-                                       "" if r["name"] in rank
-                                       else display_name(r, meta, "fr").lower()))
+    return sorted(kept, key=lambda r: (rank(r), sort_text(display_name(r, meta, lang))))
 
 
 def render_table(repos, cfg, lang):
@@ -111,11 +127,10 @@ def replace_block(readme, lang, table):
 
 
 def build(readme, repos, cfg):
-    selected = select_repos(repos, cfg)
-    if not selected:
+    if not select_repos(repos, cfg):
         raise RuntimeError(f"aucun dépôt avec le topic {cfg['topic']} : jeton sans accès ? README inchangé")
     for lang in ("fr", "en"):
-        readme = replace_block(readme, lang, render_table(selected, cfg, lang))
+        readme = replace_block(readme, lang, render_table(select_repos(repos, cfg, lang), cfg, lang))
     return readme
 
 
