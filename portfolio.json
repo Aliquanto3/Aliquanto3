@@ -16,7 +16,7 @@
   "pending": { "fr": "{tag} à tester", "en": "{tag} pending manual testing" },
   "unknown": { "fr": "État non renseigné", "en": "Status not set" },
   "repos": {
-    "agentic-harness-training-demo": {
+    "wavestack": {
       "name": "WaveStack",
       "en": "Teaching demonstrator that shows, building block by building block, what an agentic harness adds to a bare LLM (reasoning, memory, tools, RAG, MCP, skills, hooks, sub-agents). Runs locally on CPU; French, English and German interface."
     },
