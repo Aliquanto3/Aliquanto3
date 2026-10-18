@@ -49,8 +49,8 @@
       "name": "WaveLibrarian",
       "en": "Benchmark of AI document retrieval architectures (naive and hybrid RAG, GraphRAG, LLM wiki, agentic search) on quality, cost, latency, energy and compliance."
     },
-    "git-commands-training": {
-      "name": "Git Training",
+    "wavedevsecops": {
+      "name": "WaveDevSecOps",
       "en": "Local teaching app to learn git and GitHub, then the CI/CD chain and DevSecOps, on real offline git with a simulated GitHub; built for vibe coders who need to understand what their agent does to their repository."
     }
   }
