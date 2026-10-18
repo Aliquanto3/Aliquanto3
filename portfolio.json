@@ -52,6 +52,10 @@
     "wavedevsecops": {
       "name": "WaveDevSecOps",
       "en": "Local teaching app to learn git and GitHub, then the CI/CD chain and DevSecOps, on real offline git with a simulated GitHub; built for vibe coders who need to understand what their agent does to their repository."
+    },
+    "claude-code-mods": {
+      "name": "Claude Code Mods",
+      "en": "Mods for the Claude Code interface, installed with one line: diff-replie folds file diffs and shell output into one line and groups consecutive calls of the same kind, keeping the full detail one command away."
     }
   }
 }
