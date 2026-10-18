@@ -22,7 +22,7 @@ Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure
 | [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🟣 Développé, entraînement ou bancs d'essai en cours | Assistant IA hors ligne pour les agents du secteur public, sur un PC bureautique de 16 Go : petit modèle fine-tuné, RAG local et serveur MCP officiel de data.gouv. |
 | [WaveAudit](https://github.com/Aliquanto3/waveaudit) | 🔵 Développé, en test | Assistant IA hors ligne pour les consultants en audit de cybersécurité, sur un PC de 16 Go sans GPU : rédaction de fiches de vulnérabilité à partir des notes de pentest par un petit modèle local, sans qu'aucune donnée ne quitte le poste. |
 | [WaveLibrarian](https://github.com/Aliquanto3/wavelibrarian) | 🔵 Développé, en test | Banc de comparaison des architectures de recherche documentaire IA (RAG naïf, hybride, GraphRAG, LLM Wiki, recherche agentique…) sur la qualité, le coût, la latence, l'énergie et la conformité. |
-| [Git Training](https://github.com/Aliquanto3/git-commands-training) | ⚪ En spécification | Application pédagogique locale pour apprendre git et GitHub, puis la chaîne CI/CD et DevSecOps, sur du vrai git hors ligne avec un GitHub simulé ; pensée pour les vibe coders. En spécification. |
+| [WaveDevSecOps](https://github.com/Aliquanto3/wavedevsecops) | ⚪ En spécification | Application pédagogique locale pour apprendre git et GitHub, puis la chaîne CI/CD et DevSecOps, sur du vrai git hors ligne avec un GitHub simulé ; pensée pour les vibe coders. En spécification. |
 
 <!-- portfolio:fr:end -->
 
@@ -53,7 +53,7 @@ I build AI tools that run on ordinary machines, measure what they are really wor
 | [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🟣 Built, training or benchmarking in progress | Offline AI assistant for French public sector staff on a 16 GB office PC: fine-tuned small model, local RAG and the official data.gouv MCP server. |
 | [WaveAudit](https://github.com/Aliquanto3/waveaudit) | 🔵 Built, in testing | Offline AI assistant for cybersecurity audit consultants on a 16 GB CPU-only laptop: a local small language model drafts vulnerability findings from raw pentest notes, with no data leaving the machine. |
 | [WaveLibrarian](https://github.com/Aliquanto3/wavelibrarian) | 🔵 Built, in testing | Benchmark of AI document retrieval architectures (naive and hybrid RAG, GraphRAG, LLM wiki, agentic search) on quality, cost, latency, energy and compliance. |
-| [Git Training](https://github.com/Aliquanto3/git-commands-training) | ⚪ Specification | Local teaching app to learn git and GitHub, then the CI/CD chain and DevSecOps, on real offline git with a simulated GitHub; built for vibe coders who need to understand what their agent does to their repository. |
+| [WaveDevSecOps](https://github.com/Aliquanto3/wavedevsecops) | ⚪ Specification | Local teaching app to learn git and GitHub, then the CI/CD chain and DevSecOps, on real offline git with a simulated GitHub; built for vibe coders who need to understand what their agent does to their repository. |
 
 <!-- portfolio:en:end -->
 
