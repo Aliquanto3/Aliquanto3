@@ -24,7 +24,7 @@ Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure
 | [SLM Quality Bench](https://github.com/Aliquanto3/slm-quality-bench) | 🟣 Développé, entraînement ou bancs d'essai en cours | Banc de qualité difficile pour petits modèles de langage locaux (Ollama), en français : deux pistes de réflexion, anti-contamination, juge calibré, statistiques appariées. |
 | [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🟣 Développé, entraînement ou bancs d'essai en cours | Assistant IA hors ligne pour les agents du secteur public, sur un PC bureautique de 16 Go : petit modèle fine-tuné, RAG local et serveur MCP officiel de data.gouv. |
 | [WaveLibrarian](https://github.com/Aliquanto3/wavelibrarian) | 🟡 En développement | Banc de comparaison des architectures de recherche documentaire IA (RAG naïf, hybride, GraphRAG, LLM Wiki, recherche agentique…) sur la qualité, le coût, la latence, l'énergie et la conformité. |
-| [WaveEval](https://github.com/Aliquanto3/waveeval) | ⚪ En spécification | Application pédagogique pour apprendre à évaluer l'IA générative : pipelines, LLM juges, jeux de données, RAG et fine-tuning (en spécification) |
+| [WaveEval](https://github.com/Aliquanto3/waveeval) | ⚪ En spécification | Application pédagogique pour apprendre à évaluer l'IA générative en pratique : pipelines d'évaluation, LLM juges, jeux de données, RAG et fine-tuning |
 
 <!-- portfolio:fr:end -->
 
