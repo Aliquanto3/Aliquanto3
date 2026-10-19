@@ -56,6 +56,10 @@
     "claude-code-mods": {
       "name": "Claude Code Mods",
       "en": "Mods for the Claude Code interface, installed with one line: diff-replie folds file diffs and shell output into one line and groups consecutive calls of the same kind, keeping the full detail one command away."
+    },
+    "waveeval": {
+      "name": "WaveEval",
+      "en": "Teaching app to learn how to evaluate generative AI in practice: evaluation pipelines, LLM-as-a-judge, evaluation datasets, RAG and AI search evaluation, and data and evaluation for LLM fine-tuning."
     }
   }
 }
