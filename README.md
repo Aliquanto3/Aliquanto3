@@ -14,7 +14,7 @@ Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure
 
 | Projet | État | Description |
 | --- | --- | --- |
-| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Déployé · v0.6.5 | Plugin Claude Code pour développer par agents sans faire exploser la facture : agents routés par rôle, contrôle rapide, mesure du coût réel depuis les transcriptions. |
+| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Déployé · v0.7.1 | Plugin Claude Code pour développer par agents sans faire exploser la facture : agents routés par rôle, contrôle rapide, mesure du coût réel depuis les transcriptions. |
 | [Claude Code Mods](https://github.com/Aliquanto3/claude-code-mods) | 🟢 Déployé · v1.0.0 | Mods pour l'interface de Claude Code, installables en une ligne |
 | [WaveStack](https://github.com/Aliquanto3/wavestack) | 🟢 Déployé · v1.1.0 à tester | Démonstrateur pédagogique qui montre, brique par brique, ce qu'un harnais agentique ajoute à un LLM nu (raisonnement, mémoire, outils, RAG, MCP, skills, hooks, sous-agents). Local, sur CPU ; interface en français, anglais et allemand. |
 | [WaveLocalAI](https://github.com/Aliquanto3/wavelocalai) | 🟠 En refonte majeure · v1.3.0 | Workbench d'IA locale & responsable : démo de Small Language Models (SLM), RAG avancé et agents autonomes avec mesure d'impact Green IT (CodeCarbon). |
@@ -24,6 +24,7 @@ Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure
 | [SLM Quality Bench](https://github.com/Aliquanto3/slm-quality-bench) | 🟣 Développé, entraînement ou bancs d'essai en cours | Banc de qualité difficile pour petits modèles de langage locaux (Ollama), en français : deux pistes de réflexion, anti-contamination, juge calibré, statistiques appariées. |
 | [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🟣 Développé, entraînement ou bancs d'essai en cours | Assistant IA hors ligne pour les agents du secteur public, sur un PC bureautique de 16 Go : petit modèle fine-tuné, RAG local et serveur MCP officiel de data.gouv. |
 | [WaveLibrarian](https://github.com/Aliquanto3/wavelibrarian) | 🟡 En développement | Banc de comparaison des architectures de recherche documentaire IA (RAG naïf, hybride, GraphRAG, LLM Wiki, recherche agentique…) sur la qualité, le coût, la latence, l'énergie et la conformité. |
+| [WaveEval](https://github.com/Aliquanto3/waveeval) | ⚪ En spécification | Application pédagogique pour apprendre à évaluer l'IA générative : pipelines, LLM juges, jeux de données, RAG et fine-tuning (en spécification) |
 
 <!-- portfolio:fr:end -->
 
@@ -46,7 +47,7 @@ I build AI tools that run on ordinary machines, measure what they are really wor
 
 | Project | Status | Description |
 | --- | --- | --- |
-| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Deployed · v0.6.5 | Claude Code plugin for developing with agents without blowing up the bill: role-routed agents, quick end-of-story check, real cost measurement from local transcripts. |
+| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Deployed · v0.7.1 | Claude Code plugin for developing with agents without blowing up the bill: role-routed agents, quick end-of-story check, real cost measurement from local transcripts. |
 | [Claude Code Mods](https://github.com/Aliquanto3/claude-code-mods) | 🟢 Deployed · v1.0.0 | Mods for the Claude Code interface, installed with one line: diff-replie folds file diffs and shell output into one line and groups consecutive calls of the same kind, keeping the full detail one command away. |
 | [WaveStack](https://github.com/Aliquanto3/wavestack) | 🟢 Deployed · v1.1.0 pending manual testing | Teaching demonstrator that shows, building block by building block, what an agentic harness adds to a bare LLM (reasoning, memory, tools, RAG, MCP, skills, hooks, sub-agents). Runs locally on CPU; French, English and German interface. |
 | [WaveLocalAI](https://github.com/Aliquanto3/wavelocalai) | 🟠 Major rework · v1.3.0 | Local and responsible AI workbench: small language model (SLM) demo, advanced RAG and autonomous agents, with Green IT impact measurement (CodeCarbon). |
@@ -56,6 +57,7 @@ I build AI tools that run on ordinary machines, measure what they are really wor
 | [SLM Quality Bench](https://github.com/Aliquanto3/slm-quality-bench) | 🟣 Built, training or benchmarking in progress | Hard quality benchmark for small local language models (Ollama), in French: two reasoning tracks, anti-contamination, calibrated judge, paired statistics. |
 | [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🟣 Built, training or benchmarking in progress | Offline AI assistant for French public sector staff on a 16 GB office PC: fine-tuned small model, local RAG and the official data.gouv MCP server. |
 | [WaveLibrarian](https://github.com/Aliquanto3/wavelibrarian) | 🟡 In development | Benchmark of AI document retrieval architectures (naive and hybrid RAG, GraphRAG, LLM wiki, agentic search) on quality, cost, latency, energy and compliance. |
+| [WaveEval](https://github.com/Aliquanto3/waveeval) | ⚪ Specification | Teaching app to learn how to evaluate generative AI in practice: evaluation pipelines, LLM-as-a-judge, evaluation datasets, RAG and AI search evaluation, and data and evaluation for LLM fine-tuning. |
 
 <!-- portfolio:en:end -->
 
