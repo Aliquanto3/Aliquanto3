@@ -14,9 +14,9 @@ Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure
 
 | Projet | État | Description |
 | --- | --- | --- |
-| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Déployé · v0.9.0 | Plugin Claude Code pour développer par agents sans faire exploser la facture : agents routés par rôle, contrôle rapide, mesure du coût réel depuis les transcriptions. |
+| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Déployé · v0.14.2 | Plugin Claude Code pour développer par agents sans faire exploser la facture : agents routés par rôle, contrôle rapide, mesure du coût réel depuis les transcriptions. |
 | [Claude Code Mods](https://github.com/Aliquanto3/claude-code-mods) | 🟢 Déployé · v1.0.1 | Mods pour l'interface de Claude Code, installables en une ligne |
-| [WaveStack](https://github.com/Aliquanto3/wavestack) | 🟢 Déployé · v1.1.0 à tester | Démonstrateur pédagogique qui montre, brique par brique, ce qu'un harnais agentique ajoute à un LLM nu (raisonnement, mémoire, outils, RAG, MCP, skills, hooks, sous-agents). Local, sur CPU ; interface en français, anglais et allemand. |
+| [WaveStack](https://github.com/Aliquanto3/wavestack) | 🟢 Déployé · v1.6.2 | Démonstrateur pédagogique qui montre, brique par brique, ce qu'un harnais agentique ajoute à un LLM nu (raisonnement, mémoire, outils, RAG, MCP, skills, hooks, sous-agents). Local, sur CPU ; interface en français, anglais et allemand. |
 | [WaveLocalAI](https://github.com/Aliquanto3/wavelocalai) | 🟠 En refonte majeure · v1.3.0 · v2.0.0a8 à tester | Workbench d'IA locale & responsable : démo de Small Language Models (SLM), RAG avancé et agents autonomes avec mesure d'impact Green IT (CodeCarbon). |
 | [Copilote Jira](https://github.com/Aliquanto3/usine-migration-jira-demo) | 🔵 Développé, en test | Reporting automatisé et copilote IA d'une usine de migration de SI depuis Jira (données fictives) |
 | [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🔵 Développé, en test | Assistant IA hors ligne pour les agents du secteur public, sur un PC bureautique de 16 Go : petit modèle fine-tuné, RAG local et serveur MCP officiel de data.gouv. |
@@ -48,9 +48,9 @@ I build AI tools that run on ordinary machines, measure what they are really wor
 
 | Project | Status | Description |
 | --- | --- | --- |
-| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Deployed · v0.9.0 | Claude Code plugin for developing with agents without blowing up the bill: role-routed agents, quick end-of-story check, real cost measurement from local transcripts. |
+| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Deployed · v0.14.2 | Claude Code plugin for developing with agents without blowing up the bill: role-routed agents, quick end-of-story check, real cost measurement from local transcripts. |
 | [Claude Code Mods](https://github.com/Aliquanto3/claude-code-mods) | 🟢 Deployed · v1.0.1 | Mods for the Claude Code interface, installed with one line: diff-replie folds file diffs and shell output into one line and groups consecutive calls of the same kind, keeping the full detail one command away. |
-| [WaveStack](https://github.com/Aliquanto3/wavestack) | 🟢 Deployed · v1.1.0 pending manual testing | Teaching demonstrator that shows, building block by building block, what an agentic harness adds to a bare LLM (reasoning, memory, tools, RAG, MCP, skills, hooks, sub-agents). Runs locally on CPU; French, English and German interface. |
+| [WaveStack](https://github.com/Aliquanto3/wavestack) | 🟢 Deployed · v1.6.2 | Teaching demonstrator that shows, building block by building block, what an agentic harness adds to a bare LLM (reasoning, memory, tools, RAG, MCP, skills, hooks, sub-agents). Runs locally on CPU; French, English and German interface. |
 | [WaveLocalAI](https://github.com/Aliquanto3/wavelocalai) | 🟠 Major rework · v1.3.0 · v2.0.0a8 pending manual testing | Local and responsible AI workbench: small language model (SLM) demo, advanced RAG and autonomous agents, with Green IT impact measurement (CodeCarbon). |
 | [Jira Copilot](https://github.com/Aliquanto3/usine-migration-jira-demo) | 🔵 Built, in testing | Automated reporting and AI copilot for an IT migration factory driven by Jira (fictitious data). |
 | [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🔵 Built, in testing | Offline AI assistant for French public sector staff on a 16 GB office PC: fine-tuned small model, local RAG and the official data.gouv MCP server. |
