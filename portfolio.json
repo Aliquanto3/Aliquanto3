@@ -60,10 +60,11 @@
     "waveeval": {
       "name": "WaveEval",
       "en": "Teaching app to learn how to evaluate generative AI in practice: evaluation pipelines, LLM-as-a-judge, evaluation datasets, RAG and AI search evaluation, and data and evaluation for LLM fine-tuning."
-    }
-  },
+    },
     "veille-agents-code": {
-      "name": "Coding agents watch",
+      "name": "Veille agents de code",
+      "name_en": "Coding agents watch",
       "en": "Tooled market watch on coding agents (Claude Code first): plugins, skills and practices grouped by the problem they solve, compared with native features and checked against research papers and practitioner feedback, with a visual radar and a sourced report."
     }
+  }
 }
