@@ -1,40 +1,8 @@
 # Anaël Yahi
 
-**Senior Consultant IA chez Wavestone** · [LinkedIn](https://www.linkedin.com/in/ana%C3%ABl-yahi/)
-
-Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure ce qu'ils valent vraiment, et je rends visible la façon dont ils fonctionnent.
-
-- **IA locale et frugale** : petits modèles de langage (SLM) sur un simple PC, sans GPU ni dépendance au cloud, avec mesure de l'impact carbone.
-- **Agents** : ce qu'un harnais agentique ajoute à un LLM (outils, mémoire, RAG, MCP), et comment développer par agents sans faire exploser la facture.
-- **Évaluation** : bancs de qualité en français, protégés de la contamination et analysés statistiquement, pour choisir un modèle sur des mesures plutôt que sur des classements publics.
-
-## Projets IA
-
-<!-- portfolio:fr:start -->
-
-| Projet | État | Description |
-| --- | --- | --- |
-| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Déployé · v0.14.2 | Plugin Claude Code pour développer par agents sans faire exploser la facture : agents routés par rôle, contrôle rapide, mesure du coût réel depuis les transcriptions. |
-| [Claude Code Mods](https://github.com/Aliquanto3/claude-code-mods) | 🟢 Déployé · v1.0.1 | Mods pour l'interface de Claude Code, installables en une ligne |
-| [WaveStack](https://github.com/Aliquanto3/wavestack) | 🟢 Déployé · v1.6.2 | Démonstrateur pédagogique qui montre, brique par brique, ce qu'un harnais agentique ajoute à un LLM nu (raisonnement, mémoire, outils, RAG, MCP, skills, hooks, sous-agents). Local, sur CPU ; interface en français, anglais et allemand. |
-| [WaveLocalAI](https://github.com/Aliquanto3/wavelocalai) | 🟠 En refonte majeure · v1.3.0 · v2.0.0a8 à tester | Workbench d'IA locale & responsable : démo de Small Language Models (SLM), RAG avancé et agents autonomes avec mesure d'impact Green IT (CodeCarbon). |
-| [Copilote Jira](https://github.com/Aliquanto3/usine-migration-jira-demo) | 🔵 Développé, en test | Reporting automatisé et copilote IA d'une usine de migration de SI depuis Jira (données fictives) |
-| [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🔵 Développé, en test | Assistant IA hors ligne pour les agents du secteur public, sur un PC bureautique de 16 Go : petit modèle fine-tuné, RAG local et serveur MCP officiel de data.gouv. |
-| [Veille agents de code](https://github.com/Aliquanto3/veille-agents-code) | 🔵 Développé, en test | Veille outillée sur les agents de code (Claude Code) : plugins, skills et pratiques classés par problème, vérifiés contre la recherche et les praticiens |
-| [WaveAudit](https://github.com/Aliquanto3/waveaudit) | 🔵 Développé, en test | Assistant IA hors ligne pour les consultants en audit de cybersécurité, sur un PC de 16 Go sans GPU : rédaction de fiches de vulnérabilité à partir des notes de pentest par un petit modèle local, sans qu'aucune donnée ne quitte le poste. |
-| [WaveDevSecOps](https://github.com/Aliquanto3/wavedevsecops) | 🔵 Développé, en test | Application pédagogique locale pour apprendre git et GitHub, puis la chaîne CI/CD et DevSecOps, sur du vrai git hors ligne avec un GitHub simulé ; pensée pour les vibe coders. v0.1.0 en test. |
-| [WaveLibrarian](https://github.com/Aliquanto3/wavelibrarian) | 🔵 Développé, en test | Banc de comparaison des architectures de recherche documentaire IA (RAG naïf, hybride, GraphRAG, LLM Wiki, recherche agentique…) sur la qualité, le coût, la latence, l'énergie et la conformité. |
-| [SLM Quality Bench](https://github.com/Aliquanto3/slm-quality-bench) | 🟣 Développé, entraînement ou bancs d'essai en cours | Banc de qualité difficile pour petits modèles de langage locaux (Ollama), en français : deux pistes de réflexion, anti-contamination, juge calibré, statistiques appariées. |
-| [WaveEval](https://github.com/Aliquanto3/waveeval) | ⚪ En spécification | Application pédagogique pour apprendre à évaluer l'IA générative en pratique : pipelines d'évaluation, LLM juges, jeux de données, RAG et fine-tuning |
-
-<!-- portfolio:fr:end -->
-
-<sub>Tableau régénéré chaque semaine à partir des dépôts eux-mêmes. « À tester » désigne une version publiée mais pas encore recettée manuellement.</sub>
-
-<details>
-<summary>🇬🇧 English version</summary>
-
 **Senior AI Consultant at Wavestone** · [LinkedIn](https://www.linkedin.com/in/ana%C3%ABl-yahi/)
+
+<sub>🇫🇷 Version française en bas de page.</sub>
 
 I build AI tools that run on ordinary machines, measure what they are really worth, and make visible how they work.
 
@@ -42,7 +10,7 @@ I build AI tools that run on ordinary machines, measure what they are really wor
 - **Agents**: what an agentic harness adds to an LLM (tools, memory, RAG, MCP), and how to develop with agents without blowing up the bill.
 - **Evaluation**: French-language quality benchmarks, protected against contamination and statistically analysed, to pick a model on measurements rather than public leaderboards.
 
-### AI projects
+## AI projects
 
 <!-- portfolio:en:start -->
 
@@ -64,5 +32,39 @@ I build AI tools that run on ordinary machines, measure what they are really wor
 <!-- portfolio:en:end -->
 
 <sub>Table regenerated weekly from the repositories themselves. Projects are documented in French. "Pending manual testing" marks a version that is published but not yet manually tested.</sub>
+
+<details>
+<summary>🇫🇷 Version française</summary>
+
+**Senior Consultant IA chez Wavestone** · [LinkedIn](https://www.linkedin.com/in/ana%C3%ABl-yahi/)
+
+Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure ce qu'ils valent vraiment, et je rends visible la façon dont ils fonctionnent.
+
+- **IA locale et frugale** : petits modèles de langage (SLM) sur un simple PC, sans GPU ni dépendance au cloud, avec mesure de l'impact carbone.
+- **Agents** : ce qu'un harnais agentique ajoute à un LLM (outils, mémoire, RAG, MCP), et comment développer par agents sans faire exploser la facture.
+- **Évaluation** : bancs de qualité en français, protégés de la contamination et analysés statistiquement, pour choisir un modèle sur des mesures plutôt que sur des classements publics.
+
+### Projets IA
+
+<!-- portfolio:fr:start -->
+
+| Projet | État | Description |
+| --- | --- | --- |
+| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Déployé · v0.14.2 | Plugin Claude Code pour développer par agents sans faire exploser la facture : agents routés par rôle, contrôle rapide, mesure du coût réel depuis les transcriptions. |
+| [Claude Code Mods](https://github.com/Aliquanto3/claude-code-mods) | 🟢 Déployé · v1.0.1 | Mods pour l'interface de Claude Code, installables en une ligne |
+| [WaveStack](https://github.com/Aliquanto3/wavestack) | 🟢 Déployé · v1.6.2 | Démonstrateur pédagogique qui montre, brique par brique, ce qu'un harnais agentique ajoute à un LLM nu (raisonnement, mémoire, outils, RAG, MCP, skills, hooks, sous-agents). Local, sur CPU ; interface en français, anglais et allemand. |
+| [WaveLocalAI](https://github.com/Aliquanto3/wavelocalai) | 🟠 En refonte majeure · v1.3.0 · v2.0.0a8 à tester | Workbench d'IA locale & responsable : démo de Small Language Models (SLM), RAG avancé et agents autonomes avec mesure d'impact Green IT (CodeCarbon). |
+| [Copilote Jira](https://github.com/Aliquanto3/usine-migration-jira-demo) | 🔵 Développé, en test | Reporting automatisé et copilote IA d'une usine de migration de SI depuis Jira (données fictives) |
+| [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🔵 Développé, en test | Assistant IA hors ligne pour les agents du secteur public, sur un PC bureautique de 16 Go : petit modèle fine-tuné, RAG local et serveur MCP officiel de data.gouv. |
+| [Veille agents de code](https://github.com/Aliquanto3/veille-agents-code) | 🔵 Développé, en test | Veille outillée sur les agents de code (Claude Code) : plugins, skills et pratiques classés par problème, vérifiés contre la recherche et les praticiens |
+| [WaveAudit](https://github.com/Aliquanto3/waveaudit) | 🔵 Développé, en test | Assistant IA hors ligne pour les consultants en audit de cybersécurité, sur un PC de 16 Go sans GPU : rédaction de fiches de vulnérabilité à partir des notes de pentest par un petit modèle local, sans qu'aucune donnée ne quitte le poste. |
+| [WaveDevSecOps](https://github.com/Aliquanto3/wavedevsecops) | 🔵 Développé, en test | Application pédagogique locale pour apprendre git et GitHub, puis la chaîne CI/CD et DevSecOps, sur du vrai git hors ligne avec un GitHub simulé ; pensée pour les vibe coders. v0.1.0 en test. |
+| [WaveLibrarian](https://github.com/Aliquanto3/wavelibrarian) | 🔵 Développé, en test | Banc de comparaison des architectures de recherche documentaire IA (RAG naïf, hybride, GraphRAG, LLM Wiki, recherche agentique…) sur la qualité, le coût, la latence, l'énergie et la conformité. |
+| [SLM Quality Bench](https://github.com/Aliquanto3/slm-quality-bench) | 🟣 Développé, entraînement ou bancs d'essai en cours | Banc de qualité difficile pour petits modèles de langage locaux (Ollama), en français : deux pistes de réflexion, anti-contamination, juge calibré, statistiques appariées. |
+| [WaveEval](https://github.com/Aliquanto3/waveeval) | ⚪ En spécification | Application pédagogique pour apprendre à évaluer l'IA générative en pratique : pipelines d'évaluation, LLM juges, jeux de données, RAG et fine-tuning |
+
+<!-- portfolio:fr:end -->
+
+<sub>Tableau régénéré chaque semaine à partir des dépôts eux-mêmes. « À tester » désigne une version publiée mais pas encore recettée manuellement.</sub>
 
 </details>
