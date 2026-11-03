@@ -16,12 +16,12 @@
   "pending": { "fr": "{tag} à tester", "en": "{tag} pending manual testing" },
   "unknown": { "fr": "État non renseigné", "en": "Status not set" },
   "repos": {
-    "wavestack": {
-      "name": "WaveStack",
+    "harness-lab": {
+      "name": "HarnessLab",
       "en": "Teaching demonstrator that shows, building block by building block, what an agentic harness adds to a bare LLM (reasoning, memory, tools, RAG, MCP, skills, hooks, sub-agents). Runs locally on CPU; French, English and German interface."
     },
-    "wavelocalai": {
-      "name": "WaveLocalAI",
+    "frugal-ai-workbench": {
+      "name": "Frugal AI Workbench",
       "en": "Local and responsible AI workbench: small language model (SLM) demo, advanced RAG and autonomous agents, with Green IT impact measurement (CodeCarbon)."
     },
     "agent-cost-kit": {
@@ -41,24 +41,24 @@
       "name_en": "Jira Copilot",
       "en": "Automated reporting and AI copilot for an IT migration factory driven by Jira (fictitious data)."
     },
-    "waveaudit": {
-      "name": "WaveAudit",
+    "pentest-scribe": {
+      "name": "PentestScribe",
       "en": "Offline AI assistant for cybersecurity audit consultants on a 16 GB CPU-only laptop: a local small language model drafts vulnerability findings from raw pentest notes, with no data leaving the machine."
     },
-    "wavelibrarian": {
-      "name": "WaveLibrarian",
+    "librarian-bench": {
+      "name": "LibrarianBench",
       "en": "Benchmark of AI document retrieval architectures (naive and hybrid RAG, GraphRAG, LLM wiki, agentic search) on quality, cost, latency, energy and compliance."
     },
-    "wavedevsecops": {
-      "name": "WaveDevSecOps",
+    "devsecops-dojo": {
+      "name": "DevSecOps Dojo",
       "en": "Local teaching app to learn git and GitHub, then the CI/CD chain and DevSecOps, on real offline git with a simulated GitHub; built for vibe coders who need to understand what their agent does to their repository."
     },
     "claude-code-mods": {
       "name": "Claude Code Mods",
       "en": "Mods for the Claude Code interface, installed with one line: diff-replie folds file diffs and shell output into one line and groups consecutive calls of the same kind, keeping the full detail one command away."
     },
-    "waveeval": {
-      "name": "WaveEval",
+    "eval-dojo": {
+      "name": "EvalDojo",
       "en": "Teaching app to learn how to evaluate generative AI in practice: evaluation pipelines, LLM-as-a-judge, evaluation datasets, RAG and AI search evaluation, and data and evaluation for LLM fine-tuning."
     },
     "veille-agents-code": {
