@@ -16,7 +16,7 @@ I build AI tools that run on ordinary machines, measure what they are really wor
 
 | Project | Status | Description |
 | --- | --- | --- |
-| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Deployed · v0.16.1 | Claude Code plugin for developing with agents without blowing up the bill: role-routed agents, quick end-of-story check, real cost measurement from local transcripts. |
+| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Deployed · v0.18.1 | Claude Code plugin for developing with agents without blowing up the bill: role-routed agents, quick end-of-story check, real cost measurement from local transcripts. |
 | [Claude Code Mods](https://github.com/Aliquanto3/claude-code-mods) | 🟢 Deployed · v1.0.1 | Mods for the Claude Code interface, installed with one line: diff-replie folds file diffs and shell output into one line and groups consecutive calls of the same kind, keeping the full detail one command away. |
 | [HarnessLab](https://github.com/Aliquanto3/harness-lab) | 🟢 Deployed · v2.0.0 | Teaching demonstrator that shows, building block by building block, what an agentic harness adds to a bare LLM (reasoning, memory, tools, RAG, MCP, skills, hooks, sub-agents). Runs locally on CPU; French, English and German interface. |
 | [SLM Quality Bench](https://github.com/Aliquanto3/slm-quality-bench) | 🟢 Deployed · v0.3.4 | Hard quality benchmark for small local language models (Ollama), in French: two reasoning tracks, anti-contamination, calibrated judge, paired statistics. |
@@ -28,8 +28,9 @@ I build AI tools that run on ordinary machines, measure what they are really wor
 | [LibrarianBench](https://github.com/Aliquanto3/librarian-bench) | 🔵 Built, in testing | Benchmark of AI document retrieval architectures (naive and hybrid RAG, GraphRAG, LLM wiki, agentic search) on quality, cost, latency, energy and compliance. |
 | [PentestScribe](https://github.com/Aliquanto3/pentest-scribe) | 🔵 Built, in testing | Offline AI assistant for cybersecurity audit consultants on a 16 GB CPU-only laptop: a local small language model drafts vulnerability findings from raw pentest notes, with no data leaving the machine. |
 | [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🔵 Built, in testing | Offline AI assistant for French public sector staff on a 16 GB office PC: fine-tuned small model, local RAG and the official data.gouv MCP server. |
+| [slm-weight-editing](https://github.com/Aliquanto3/slm-weight-editing) | 🟡 In development | Fixing small language model defects (reasoning loops…) by having an LLM (Claude Opus in Claude Code) edit their weights directly, without training — measured against the original by slm-quality-bench |
 | [EvalDojo](https://github.com/Aliquanto3/eval-dojo) | ⚪ Specification | Teaching app to learn how to evaluate generative AI in practice: evaluation pipelines, LLM-as-a-judge, evaluation datasets, RAG and AI search evaluation, and data and evaluation for LLM fine-tuning. |
-| [slm-weight-editing](https://github.com/Aliquanto3/slm-weight-editing) | ⚪ Specification | Fixing small language model defects (reasoning loops…) by having an LLM (Claude Opus in Claude Code) edit their weights directly, without training — measured against the original by slm-quality-bench |
+| [Mood Steering SLM](https://github.com/Aliquanto3/mood-steering-slm) | ⚪ Specification | Giving a small language model a "mood" such as joy by activation steering at inference time: dosable and reversible, with no weight change, measured against a role-play prompt on tone, accuracy, sycophancy and energy. |
 
 <!-- portfolio:en:end -->
 
@@ -52,7 +53,7 @@ Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure
 
 | Projet | État | Description |
 | --- | --- | --- |
-| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Déployé · v0.16.1 | Plugin Claude Code pour développer par agents sans faire exploser la facture : agents routés par rôle, contrôle rapide, mesure du coût réel depuis les transcriptions. |
+| [Agent Cost Kit](https://github.com/Aliquanto3/agent-cost-kit) | 🟢 Déployé · v0.18.1 | Plugin Claude Code pour développer par agents sans faire exploser la facture : agents routés par rôle, contrôle rapide, mesure du coût réel depuis les transcriptions. |
 | [Claude Code Mods](https://github.com/Aliquanto3/claude-code-mods) | 🟢 Déployé · v1.0.1 | Mods pour l'interface de Claude Code, installables en une ligne |
 | [HarnessLab](https://github.com/Aliquanto3/harness-lab) | 🟢 Déployé · v2.0.0 | Démonstrateur pédagogique qui montre, brique par brique, ce qu'un harnais agentique ajoute à un LLM nu (raisonnement, mémoire, outils, RAG, MCP, skills, hooks, sous-agents). Local, sur CPU ; interface en français, anglais et allemand. |
 | [SLM Quality Bench](https://github.com/Aliquanto3/slm-quality-bench) | 🟢 Déployé · v0.3.4 | Banc de qualité difficile pour petits modèles de langage locaux (Ollama), en français : deux pistes de réflexion, anti-contamination, juge calibré, statistiques appariées. |
@@ -64,8 +65,9 @@ Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure
 | [Roue du hasard](https://github.com/Aliquanto3/roue-du-hasard) | 🔵 Développé, en test | Roue du hasard : une page HTML autonome pour désigner qui reçoit un cadeau |
 | [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🔵 Développé, en test | Assistant IA hors ligne pour les agents du secteur public, sur un PC bureautique de 16 Go : petit modèle fine-tuné, RAG local et serveur MCP officiel de data.gouv. |
 | [Veille agents de code](https://github.com/Aliquanto3/veille-agents-code) | 🔵 Développé, en test | Veille outillée sur les agents de code (Claude Code) : plugins, skills et pratiques classés par problème, vérifiés contre la recherche et les praticiens |
+| [slm-weight-editing](https://github.com/Aliquanto3/slm-weight-editing) | 🟡 En développement | Fixing small language model defects (reasoning loops…) by having an LLM (Claude Opus in Claude Code) edit their weights directly, without training — measured against the original by slm-quality-bench |
 | [EvalDojo](https://github.com/Aliquanto3/eval-dojo) | ⚪ En spécification | Application pédagogique pour apprendre à évaluer l'IA générative en pratique : pipelines d'évaluation, LLM juges, jeux de données, RAG et fine-tuning |
-| [slm-weight-editing](https://github.com/Aliquanto3/slm-weight-editing) | ⚪ En spécification | Fixing small language model defects (reasoning loops…) by having an LLM (Claude Opus in Claude Code) edit their weights directly, without training — measured against the original by slm-quality-bench |
+| [Mood Steering SLM](https://github.com/Aliquanto3/mood-steering-slm) | ⚪ En spécification | Giving a small language model a "mood" (joy, calm…) by activation steering at inference time — dosable, reversible, no weight change — compared with a role-play prompt on tone, accuracy, sycophancy and energy |
 
 <!-- portfolio:fr:end -->
 
