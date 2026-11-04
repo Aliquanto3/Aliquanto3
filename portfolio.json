@@ -24,6 +24,10 @@
       "name": "Frugal AI Workbench",
       "en": "Local and responsible AI workbench: small language model (SLM) demo, advanced RAG and autonomous agents, with Green IT impact measurement (CodeCarbon)."
     },
+    "mood-steering-slm": {
+      "name": "Mood Steering SLM",
+      "en": "Giving a small language model a \"mood\" such as joy by activation steering at inference time: dosable and reversible, with no weight change, measured against a role-play prompt on tone, accuracy, sycophancy and energy."
+    },
     "agent-cost-kit": {
       "name": "Agent Cost Kit",
       "en": "Claude Code plugin for developing with agents without blowing up the bill: role-routed agents, quick end-of-story check, real cost measurement from local transcripts."
