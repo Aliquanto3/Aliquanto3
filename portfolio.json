@@ -32,6 +32,10 @@
       "name": "SLM Quality Bench",
       "en": "Hard quality benchmark for small local language models (Ollama), in French: two reasoning tracks, anti-contamination, calibrated judge, paired statistics."
     },
+    "slm-weight-editing": {
+      "name": "SLM Weight Editing",
+      "en": "Fixing small language model defects such as reasoning loops by having Claude edit their weights directly, without training, then measuring gains and regressions on SLM Quality Bench."
+    },
     "service-public-slm-fine-tuning": {
       "name": "SLM Service Public",
       "en": "Offline AI assistant for French public sector staff on a 16 GB office PC: fine-tuned small model, local RAG and the official data.gouv MCP server."
