@@ -28,6 +28,10 @@
       "name": "Mood Steering SLM",
       "en": "Giving a small language model a \"mood\" such as joy by activation steering at inference time: dosable and reversible, with no weight change, measured against a role-play prompt on tone, accuracy, sycophancy and energy."
     },
+    "nn-weight-writing": {
+      "name": "NN Weight Writing",
+      "en": "Having an LLM write every weight of a small neural network directly, without training, then comparing it with hand-written rules, standard training, weight editing and activation steering, from rule-based tasks up to grafting written circuits into a small language model."
+    },
     "agent-cost-kit": {
       "name": "Agent Cost Kit",
       "en": "Claude Code plugin for developing with agents without blowing up the bill: role-routed agents, quick end-of-story check, real cost measurement from local transcripts."
