@@ -36,6 +36,11 @@
       "name": "Agent Cost Kit",
       "en": "Claude Code plugin for developing with agents without blowing up the bill: role-routed agents, quick end-of-story check, real cost measurement from local transcripts."
     },
+    "charte-generique": {
+      "name": "Charte générique",
+      "name_en": "Generic Design System",
+      "en": "Dark-first design system shipped as a Claude Code plugin: DTCG tokens, theme files for web, Streamlit, Python charts, Office and mermaid, accessibility checks (contrast, colour blindness), and a skill that audits a repository and migrates it to the system."
+    },
     "slm-quality-bench": {
       "name": "SLM Quality Bench",
       "en": "Hard quality benchmark for small local language models (Ollama), in French: two reasoning tracks, anti-contamination, calibrated judge, paired statistics."
