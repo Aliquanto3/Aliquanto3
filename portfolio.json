@@ -87,6 +87,11 @@
       "name": "Veille agents de code",
       "name_en": "Coding agents watch",
       "en": "Tooled market watch on coding agents (Claude Code first): plugins, skills and practices grouped by the problem they solve, compared with native features and checked against research papers and practitioner feedback, with a visual radar and a sourced report."
+    },
+    "pilotage-projets": {
+      "name": "Pilotage projets",
+      "name_en": "Project cockpit",
+      "en": "Local, personal dashboard that tracks projects and parallel Claude Code sessions across several PCs: session hooks and a per-PC scan feed a local web app that shows the action to take on each project (stable, to stabilise, paused, to restart, to file) and what to resume after a shutdown."
     }
   }
 }
