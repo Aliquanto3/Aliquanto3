@@ -32,6 +32,7 @@ I build AI tools that run on ordinary machines, measure what they are really wor
 | [SLM Service Public](https://github.com/Aliquanto3/service-public-slm-fine-tuning) | 🔵 Built, in testing | Offline AI assistant for French public sector staff on a 16 GB office PC: fine-tuned small model, local RAG and the official data.gouv MCP server. |
 | [SLM Weight Editing](https://github.com/Aliquanto3/slm-weight-editing) | 🔵 Built, in testing | Fixing small language model defects such as reasoning loops by having Claude edit their weights directly, without training, then measuring gains and regressions on SLM Quality Bench. |
 | [Mood Steering SLM](https://github.com/Aliquanto3/mood-steering-slm) | 🟣 Built, training or benchmarking in progress | Giving a small language model a "mood" such as joy by activation steering at inference time: dosable and reversible, with no weight change, measured against a role-play prompt on tone, accuracy, sycophancy and energy. |
+| [Project cockpit](https://github.com/Aliquanto3/pilotage-projets) | 🟡 In development | Local, personal dashboard that tracks projects and parallel Claude Code sessions across several PCs: session hooks and a per-PC scan feed a local web app that shows the action to take on each project (stable, to stabilise, paused, to restart, to file) and what to resume after a shutdown. |
 | [EvalDojo](https://github.com/Aliquanto3/eval-dojo) | ⚪ Specification | Teaching app to learn how to evaluate generative AI in practice: evaluation pipelines, LLM-as-a-judge, evaluation datasets, RAG and AI search evaluation, and data and evaluation for LLM fine-tuning. |
 
 <!-- portfolio:en:end -->
@@ -71,6 +72,7 @@ Je construis des outils d'IA qui tournent sur des machines ordinaires, je mesure
 | [SLM Weight Editing](https://github.com/Aliquanto3/slm-weight-editing) | 🔵 Développé, en test | Fixing small language model defects (reasoning loops…) by having an LLM (Claude Opus in Claude Code) edit their weights directly, without training — measured against the original by slm-quality-bench |
 | [Veille agents de code](https://github.com/Aliquanto3/veille-agents-code) | 🔵 Développé, en test | Veille outillée sur les agents de code (Claude Code) : plugins, skills et pratiques classés par problème, vérifiés contre la recherche et les praticiens |
 | [Mood Steering SLM](https://github.com/Aliquanto3/mood-steering-slm) | 🟣 Développé, entraînement ou bancs d'essai en cours | Giving a small language model a "mood" (joy, calm…) by activation steering at inference time — dosable, reversible, no weight change — compared with a role-play prompt on tone, accuracy, sycophancy and energy |
+| [Pilotage projets](https://github.com/Aliquanto3/pilotage-projets) | 🟡 En développement | Tableau de bord local : suit les projets et les sessions Claude Code menées en parallèle sur plusieurs PC, et indique quoi relancer à la reprise. |
 | [EvalDojo](https://github.com/Aliquanto3/eval-dojo) | ⚪ En spécification | Application pédagogique pour apprendre à évaluer l'IA générative en pratique : pipelines d'évaluation, LLM juges, jeux de données, RAG et fine-tuning |
 
 <!-- portfolio:fr:end -->
